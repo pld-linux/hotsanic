@@ -11,11 +11,10 @@ Source0:	http://dl.sourceforge.net/hotsanic/%{name}-%{version}-%{_pver}.tgz
 # Source0-md5:	2b005b9ef437abf105a9426cfea51b11
 Source1:	%{name}.conf
 URL:		http://sourceforge.net/projects/hotsanic/
-BuildRequires:	ImageMagick-devel
-BuildRequires:	iptables
-BuildRequires:	perl >= 1:5.0.0
-BuildRequires:  perl-devel >= 1:5.0.0
-BuildRequires:  rrdtool
+Requires:	ImageMagick
+Requires:	iptables
+Requires:	perl >= 1:5.0.0
+Requires:	rrdtool
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -91,7 +90,7 @@ fi
 %defattr(644,root,root,755)
 %doc Documentation/CHANGES Documentation/README Documentation/README.snmp Documentation/TODO
 %dir %{_sysconfdir}
-%config(noreplace) %verify(not size mtime md5) /etc/httpd/%{name}.conf
+%config(noreplace) %verify(not md5 mtime size) /etc/httpd/%{name}.conf
 %dir %{_sysinfodir}
 %attr(755,root,http) %{_sysinfodir}/images
 %{_sysinfodir}/lib
