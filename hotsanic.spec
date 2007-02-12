@@ -1,7 +1,7 @@
 %define		_pver	pre5
 %define		_name	HotSaNIC
 Summary:	Html Overview to System and Network Information Center
-Summary(pl):	HotSaNIC - centrum informacyjne dla systemów uniksowych
+Summary(pl.UTF-8):   HotSaNIC - centrum informacyjne dla systemÃ³w uniksowych
 Name:		hotsanic
 Version:	0.5.0
 Release:	0.1
@@ -27,11 +27,11 @@ It gives you a graphical overview about certain network and
 system statistics. HotSaNIC is programmed (mainly in Perl 5) 
 in a modular way to give you a great flexibility.
 
-%description -l pl
-HotSaNIC to oparte na WWW centrum informacyjne dla systemów
-uniksowych. Udostêpnia graficzny podgl±d wybranych statystyk sieci i
-systemu. HotSaNIC zosta³ napisany (g³ównie w Perlu 5) w sposób
-modularny, daj±cy du¿± elastyczno¶æ.
+%description -l pl.UTF-8
+HotSaNIC to oparte na WWW centrum informacyjne dla systemÃ³w
+uniksowych. UdostÄ™pnia graficzny podglÄ…d wybranych statystyk sieci i
+systemu. HotSaNIC zostaÅ‚ napisany (gÅ‚Ã³wnie w Perlu 5) w sposÃ³b
+modularny, dajÄ…cy duÅ¼Ä… elastycznoÅ›Ä‡.
 
 %prep
 %setup -q -n %{_name}
