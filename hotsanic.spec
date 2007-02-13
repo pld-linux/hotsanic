@@ -1,7 +1,7 @@
 %define		_pver	pre5
 %define		_name	HotSaNIC
 Summary:	Html Overview to System and Network Information Center
-Summary(pl.UTF-8):   HotSaNIC - centrum informacyjne dla systemów uniksowych
+Summary(pl.UTF-8):	HotSaNIC - centrum informacyjne dla systemów uniksowych
 Name:		hotsanic
 Version:	0.5.0
 Release:	0.1
